@@ -1,8 +1,11 @@
-def ft_garden_intro():
-    """
-    The function initializes a plant with a predefined name, height, and age,
-    then prints this information in a formatted way to the console.
-    """
+"""
+Garden Introduction Program
+
+This program displays basic information about a plant,
+including its name, height, and age, in a formatted way
+when the script is executed directly.
+"""
+if __name__ == "__main__":
     name = "Rose"
     height = 25
     age = 30
@@ -12,7 +15,3 @@ def ft_garden_intro():
     print(f"Age: {age}days")
     print()
     print("=== End of Program ===")
-
-
-if __name__ == "__main__":
-    ft_garden_intro()
