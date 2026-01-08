@@ -8,18 +8,25 @@ class Plant:
         print(f"Created: {self.name} ({self.height}cm, {self.age} days)")
 
 
+class PlantFactory:
+    def factory(self, data):
+        return Plant(data[0], data[1], data[2])
+
+
 plant_data = [
-    ("Rose", 25, 30),
-    ("Oak", 200, 365),
-    ("Cactus", 5, 90),
-    ("Sunflower", 80, 45),
-    ("Fern", 15, 120)
+    ["Rose", 25, 30],
+    ["Oak", 200, 365],
+    ["Cactus", 5, 90],
+    ["Sunflower", 80, 45],
+    ["Fern", 15, 120]
 ]
+
+factory = PlantFactory()
 
 plants = []
 
-for name, height, age in plant_data:
-    plant = Plant(name, height, age)
+for data in plant_data:
+    plant = factory.factory(data)
     plants.append(plant)
 
 print("=== Plant Factory Output ===")
