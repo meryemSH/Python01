@@ -8,29 +8,29 @@ class SecurePlant:
 
     Attributes:
         name (str): The name of the plant.
-        __height (int/float): The height of the plant in centimeters (private).
+        _height (int/float): The height of the plant in centimeters (private).
         __age (int): The age of the plant in days (private).
     """
     def __init__(self, name, height, age):
         self.name = name
-        self.__height = height
-        self.__age = age
+        self._height = height
+        self._age = age
         print(f"Plant created: {self.name}")
 
     def get_height(self):
         """Returns the current height."""
-        return self.__height
+        return self._height
 
     def get_age(self):
         """Returns the current age."""
-        return self.__age
+        return self._age
 
     def set_height(self, value):
         """
         Updates the height of the plant if the value is valid (non-negative).
         """
         if value >= 0:
-            self.__height = value
+            self._height = value
             print(f"Height updated: {value}cm [OK]")
         else:
             print(f"Invalid operation attempted: height {value}cm [REJECTED]")
@@ -41,7 +41,7 @@ class SecurePlant:
         Updates the age of the plant if the value is valid (non-negative).
         """
         if value >= 0:
-            self.__age = value
+            self._age = value
             print(f"Age updated: {value} days [OK]")
         else:
             print(f"Invalid operation attempted: age {value} days [REJECTED]")
