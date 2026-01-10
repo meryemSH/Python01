@@ -81,7 +81,7 @@ class PrizeFlower(FloweringPlant):
             prize_points (int): Points awarded for the prize flower.
         """
         super().__init__(name, height, color)
-        self.prize_points = prize_points
+        self.prize_points = prize_points * 4
 
     def show_prize(self):
         """Return prize points information."""

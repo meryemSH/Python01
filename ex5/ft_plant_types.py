@@ -139,8 +139,11 @@ if __name__ == "__main__":
     carrot = Vegetable("Carrot", 30, 70, "spring", "vitamin A")
 
     print()
+    rose.get_info()
     rose.bloom()
     print()
+    rose.get_info()
     oak.produce_shade()
     print()
+    rose.get_info()
     tomato.nutrition()
